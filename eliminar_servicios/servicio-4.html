@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERMEDCIAL</title>
+    <link rel="stylesheet" href="../css/estilos_listaobjetos.css">
+    <link rel="stylesheet" href="../css/estilos_listaobjetos.css">
+    <link rel="stylesheet" href="../css/estilos_formcolumnas.css">
+    <script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="encabezado">
+        <img src="../imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+        <h1>Consultorio Toñitos</h1>
+        <h2>Intermedical</h2>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="../perfil_usuario.html">
+                <i class="fa-solid fa-person"></i> Pacientes</a>
+            <a href="lista_servicios.html">
+                <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+            <a href="lista_medicos.html">
+                <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+            <a href="lista_medi.html">
+                <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+                <a href="../agendar_citas.html">
+                    <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+                    <a href="../historialmedico.html">
+                        <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+                    <a href="../inventariomedi.html"> 
+                        <i class="fa-solid fa-tablets"></i>Inventario</a>
+            <a href="index.html">
+                <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+    <!--CONTENIDO LISTA SERVICIOS-->
+    <div>
+        <div class="listobj">
+            <h3>Servicios</h3>
+            <table>
+                <tr>
+                    <th>ID-Servicios</th>
+                    <th>Nombre</th>
+                    <th>Descripcion</th>
+                    <th>Precio</th>
+                    <th>Imagen</th>
+                    <th>Operaciones</th>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Medición de Glucosa en la Salud</td>
+                    <td>Seguimiento de los niveles de azúcar en la sangre para promover un estilo de vida saludable</td>
+                    <td>$80 Pesos</td>
+                    <td><img src="../imagenes/glucosa.png" width="80" height="65"></td>
+                    <td>
+                        <input type="button" value="Eliminar" onclick="confirmarEliminar(this)">
+                        <input type="button" name="cancelar" value="Cancelar" onclick="cancelar()">
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        function confirmarEliminar(button) {
+        if (confirm('¿Estás seguro de eliminar este dato?')) {
+            var fila = button.parentNode.parentNode;
+            fila.parentNode.removeChild(fila);
+            // Muestra notificación
+            alert('¡Eliminado con éxito!');
+            // Redirige a otro archivo HTML
+            window.location.href = 'file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/lista_servicios.html';
+        }
+    }
+
+    function cancelar() {
+                    alert("Operación cancelada");
+                    window.location.href = "file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/lista_servicios.html";
+                }
+    </script>
+ 
+ 
+    <!--Pie de pagina-->
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br><!--Salto de linea-->
+                <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+            </td>
+            <td>
+                &#169; TECH BLINDS <br> <!--© simbolo de copyright-->
+                <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                <i class="fa-brands fa-tiktok"></i> tech_blinds
+            </td>
+        </tr>
+    </table>
+</footer>
+</body>
+</html>

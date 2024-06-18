@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>INTERMEDICAL</title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+        <link rel="stylesheet" href="../css/estilos_listaobjetos.css">
+        <link rel="stylesheet" href="../css/estilos_index.css">
+        <link rel="stylesheet" href="../css/estilos_formcolumnas.css">
+        <script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+    </head>
+<body>
+    <!--Encabezado-->
+    <header class="encabezado">
+        <img src="../imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+        <h1>Consultorio Toñitos</h1>
+        <h2>Intermedical</h2>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="../perfil_usuario.html">
+                <i class="fa-solid fa-person"></i> Pacientes</a>
+            <a href="../lista_servicios.html">
+                <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+            <a href="../lista_medicos.html">
+                <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+            <a href="../lista_medi.html">
+                <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+                <a href="../agendar_citas.html">
+                    <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+                    <a href="../historialmedico.html">
+                        <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+                    <a href="../inventariomedi.html"> 
+                        <i class="fa-solid fa-tablets"></i>Inventario</a>
+            <a href="index.html">
+                <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+    <!--Contenido Lista-->
+    <div>
+        <div class="listobj">
+            <h3>Doctores</h3>
+            <table>
+                <tr>
+                    <th>ID_Doctor
+                        <td>Nombre</td>
+                        <td>Apellido Paterno</td>
+                        <td>Apellido Materno</td>
+                        <td>Cedula profesional</td>
+                        <td>Especialidad</td>
+                        <td>Correo electrónico</td>
+                    </th>
+                </tr>
+                <tr>
+                    <td contenteditable="true">03</td>
+                    <td contenteditable="true">María</td>
+                    <td contenteditable="true">González</td>
+                    <td contenteditable="true">López</td>
+                    <td contenteditable="true">5528492</td>
+                    <td contenteditable="true">Médico Partero</td>
+                    <td contenteditable="true">maria789@gmail.com</td>
+                </tr>
+            </table>
+            <div class="botones-container">
+                <!-- Botones -->
+                <input type="submit" name="guardar" value="Guardar" onclick="mostrarAlerta()">
+                <input type="button" name="cancelar" value="Cancelar" onclick="cancelar()">
+            </div>
+            <script>
+                // Función para mostrar la alerta y redireccionar
+                function mostrarAlerta() {
+                    alert("¡Cambios guardados con éxito!");
+                    window.location.href = "file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/lista_medicos.html";
+                }
+                // Función para el botón "Cancelar"
+                function cancelar() {
+                    alert("Operación cancelada");
+                    window.location.href = "file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/lista_medicos.html";
+                }
+            </script>
+        </div>
+    </div>
+ 
+ 
+ 
+    <!--Pie de pagina-->
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br><!--Salto de linea-->
+                <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+            </td>
+            <td>
+                &#169; TECH BLINDS <br> <!--© simbolo de copyright-->
+                <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                <i class="fa-brands fa-tiktok"></i> tech_blinds
+            </td>
+        </tr>
+    </table>
+</footer>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERMEDICAL</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/estilos_listaobjetos.css">
+    <link rel="stylesheet" href="../css/estilos_index.css">
+    <link rel="stylesheet" href="../css/estilos_formcolumnas.css">
+    <script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="encabezado"> 
+        <img src="../imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+        <h1>Consultorio Toñitos</h1>
+        <h2 class="encabezadoh2">Intermedical</h2>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="lista_pacientes.html">
+                <i class="fa-solid fa-person"></i> Pacientes</a>
+            <a href="lista_servicios.html">
+                <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+            <a href="lista_medicos.html">
+                <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+            <a href="lista_medi.html">
+                <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+            <a href="agendar_citas.html">
+                <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+            <a href="historialmedico.html">
+                <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+            <a href="inventariomedi.html"> 
+                <i class="fa-solid fa-tablets"></i>Inventario</a>
+            <a href="index.html">
+                <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+    <!-- CONTENIDO -->
+    <div class="container">
+        <h1 class="title">Administración de Citas Médicas</h1>
+        <div class="appointment-list">
+            <div class="appointment-item">
+                <h2 class="appointment-title">Cita Médica para María González López</h2>
+                <p class="appointment-info"><strong>Fecha:</strong> 10 de abril de 2024</p>
+                <p class="appointment-info"><strong>Hora:</strong> 9:00 am</p>
+                <p class="appointment-info"><strong>Doctor:</strong> Dr. José Antonio Cruz Suares</p>
+                <p class="appointment-info"><strong>Correo Electrónico:</strong> maria789@gmail.com</p>
+                <p class="appointment-info"><strong>Teléfono:</strong> 55-5432-9876</p>
+                <div class="actions">
+                    <button class="btn" onclick="editarCita()">Editar</button>
+                    <button class="btn" onclick="confirmarEliminar(this)">Eliminar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function confirmarEliminar(button) {
+        if (confirm('¿Estás seguro de eliminar este dato?')) {
+            var fila = button.parentNode.parentNode;
+            fila.parentNode.removeChild(fila);
+            // Muestra notificación
+            alert('¡Eliminado con éxito!');
+            // Redirige a otro archivo HTML
+            window.location.href = 'file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/agendar_citas.html';
+        }
+    }
+
+
+        function editarCita() {
+            // Redirige a la página de edición
+            window.location.href = 'file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/editarcita/cita3.html';
+        }
+    </script>
+    <!--Pie de pagina-->
+    <footer class="footer">
+        <table>
+            <tr>
+                <td>
+                    <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br><!--Salto de linea-->
+                    <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                    <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+                </td>
+                <td>
+                    &#169; TECH BLINDS <br> <!--© simbolo de copyright-->
+                    <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                    <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                    <i class="fa-brands fa-tiktok"></i> tech_blinds
+                </td>
+            </tr>
+        </table>
+    </footer>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
