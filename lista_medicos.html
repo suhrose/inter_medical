@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INTERMEDICAL</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/estilos_listaobjetos.css">
+<link rel="stylesheet" href="css/estilos_index.css">
+<link rel="stylesheet" href="css/estilos_formcolumnas.css">
+<script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+<style>
+.input-container {
+        text-align: left;
+        margin-left: 65px;
+    }
+
+    input[type="text"] {
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="encabezado"> 
+        <img src="imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+        <h1>Consultorio Toñitos</h1>
+        <h2>Intermedical</h2>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="lista_pacientes.html">
+                <i class="fa-solid fa-person"></i> Pacientes</a>
+            <a href="lista_servicios.html">
+                <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+            <a href="perfil_usuario.html">
+                <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+            <a href="lista_medi.html">
+                <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+            <a href="agendar_citas.html">
+                <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+                <a href="historialmedico.html">
+                    <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+                <a href="inventariomedi.html"> 
+                    <i class="fa-solid fa-tablets"></i>Inventario</a>
+            <a href="index.html">
+                <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+    <!--Contenido Lista Profesor-->
+    <div>
+        <div class="listobj">
+            <h3>Doctores</h3>
+            <div class="agregar">
+                <a href="form_medicos.html">
+                    <i class="fa-solid fa-plus-circle"></i>Nuevo
+                </a>
+            </div>
+            <!-- Campo de búsqueda -->
+            <div class="input-container">
+                <input type="text" id="buscar" placeholder="Buscar...">
+            </div>
+            <table id="tabla">
+                <tr>
+                    <th>ID_Doctor
+                        <td>Nombre</td>
+                        <td>Apellido Paterno</td>
+                        <td>Apellido Materno</td>
+                        <td>Cedula profesional</td>
+                        <td>Especialidad</td>
+                        <td>Correo electronico</td>
+                        <th colspan="2">Operaciones</th>
+                    </th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>José Antonio</td>
+                    <td>Cruz</td>
+                    <td>Suares</td>
+                    <td>59992322</td>
+                    <td>Médico Cirujano</td>
+                    <td>Jose77@gmail.com</td>
+                    <td>
+                        <a href="editable-medico/medico1.html">
+                            <i class="fa-solid fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="eliminar-medico/medico1.html">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Juan</td>
+                    <td>Martínez</td>
+                    <td>López</td>
+                    <td>2938372</td>
+                    <td>Médico General</td>
+                    <td>juanito123@gmail.com</td>
+                    <td>
+                        <a href="editable-medico/medico2.html">
+                            <i class="fa-solid fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="eliminar-medico/medico2.html">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>María</td>
+                    <td>González</td>
+                    <td>López</td>
+                    <td>5528492</td>
+                    <td>Médico Partero</td>
+                    <td>maria789@gmail.com</td>
+                    <td>
+                        <a href="editable-medico/medico3.html">
+                            <i class="fa-solid fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="eliminar-medico/medico3.html">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Ana</td>
+                    <td>Rodríguez</td>
+                    <td>Gómez</td>
+                    <td>5928200</td>
+                    <td>Médico Oncólogo</td>
+                    <td>ana234@gmail.com</td>
+                    <td>
+                        <a href="editable-medico/medico4.html">
+                            <i class="fa-solid fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="eliminar-medico/medico4.html">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td> 
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Pedro</td>
+                    <td>Gómez</td>
+                    <td>Martínez</td>
+                    <td>94738273</td>
+                    <td>Médico Pediatra</td>
+                    <td>pedro345@gmail.com</td>
+                    <td>
+                        <a href="editable-medico/medico5.html">
+                            <i class="fa-solid fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="eliminar-medico/medico5.html">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Laura Araceli</td>
+                    <td>Ortega</td>
+                    <td>Vera</td>
+                    <td>38472343</td>
+                    <td>Médico General</td>
+                    <td>laura456@gmail.com</td>
+                    <td>
+                        <a href="editable-medico/medico6.html">
+                            <i class="fa-solid fa-edit"></i>
+                        </a>
+                    </td>
+                    <td>
+                        <a href="eliminar-medico/medico6.html">
+                            <i class="fa-solid fa-trash"></i>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+    <!--Pie de pagina-->
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br><!--Salto de linea-->
+                <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+            </td>
+            <td>
+                &#169; TECH BLINDS <br> <!--© simbolo de copyright-->
+                <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                <i class="fa-brands fa-tiktok"></i> tech_blinds
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<script>
+    document.getElementById("buscar").addEventListener("input", function() {
+        var filtro = this.value.toLowerCase();
+        var filas = document.querySelectorAll("#tabla tbody tr");
+        filas.forEach(function(fila) {
+            var mostrar = false;
+            fila.querySelectorAll("td").forEach(function(celda) {
+                if (celda.textContent.toLowerCase().indexOf(filtro) > -1) {
+                    mostrar = true;
+                }
+            });
+            if (mostrar) {
+                fila.style.display = "";
+            } else {
+                fila.style.display = "none";
+            }
+        });
+    });
+</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INTERMEDICAL</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="css/estilos_listaobjetos.css">
+<link rel="stylesheet" href="css/estilos_index.css">
+<link rel="stylesheet" href="css/estilos_formcolumnas.css">
+<script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+<style>
+.input-container {
+        text-align: left;
+        margin-left: 65px;
+    }
+
+    input[type="text"] {
+        margin: 0 auto;
+        padding: 5px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 10px;
+    }
+</style>
+</head>
+<body>
+<!--Encabezado-->
+<header class="encabezado">
+    <img src="imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+    <h1>Consultorio Toñitos</h1>
+    <h2>Intermedical</h2>
+    <div class="clearfix"></div>
+    <nav>
+        <a href="perfil_usuario.html">
+            <i class="fa-solid fa-person"></i> Pacientes</a>
+        <a href="lista_servicios.html">
+            <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+        <a href="lista_medicos.html">
+            <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+        <a href="lista_medi.html">
+            <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+        <a href="agendar_citas.html">
+            <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+            <a href="perfil_usuario.html">
+                <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+            <a href="inventariomedi.html"> 
+                <i class="fa-solid fa-tablets"></i>Inventario</a>
+        <a href="index.html">
+            <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+    </nav>
+</header>
+
+<!-- Contenido Lista Profesor -->
+<div>
+    <div class="listobj">
+        <h3>Pacientes</h3>
+        <!-- Campo de búsqueda -->
+        <div class="input-container">
+            <input type="text" id="buscar" placeholder="Buscar...">
+        </div>
+        <table id="tabla">
+                <tr>
+                    <th>ID_Paciente
+                        <td>Nombre</td>
+                        <td>Apellido P</td>
+                        <td>Apellido M</td>
+                        <td>Género</td>
+                        <td>Telefono</td>
+                        <td>Correo electrónico</td>
+                        <td>Edad</td>
+                        <td>Peso</td>
+                        <td>Estatura</td>
+                        <th>Operacion</th>
+                    </th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Cristiano</td>
+                    <td>Dominguez</td>
+                    <td>Perez</td>
+                    <td>H</td>
+                    <td>55-3668-5095</td>
+                    <td>bestiaparda77@gmail.com</td>
+                    <td>18</td>
+                    <td>72 kg</td>
+                    <td>1.65 cm</td>
+                    <td>
+                        <a href="consultarhistorial/historial1.html">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>Consultar Historial
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>02</td>
+                    <td>Juan</td>
+                    <td>Martínez</td>
+                    <td>López</td>
+                    <td>H</td>
+                    <td>55-9876-1234</td>
+                    <td>juanito123@gmail.com</td>
+                    <td>22</td>
+                    <td>82 kg</td>
+                    <td>1.70 cm</td>
+                    <td>
+                        <a href="consultarhistorial/historial2.html">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>Consultar Historial
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>03</td>
+                    <td>María</td>
+                    <td>González</td>
+                    <td>López</td>
+                    <td>M</td>
+                    <td>55-5432-9876</td>
+                    <td>maria789@gmail.com</td>
+                    <td>15</td>
+                    <td>50 kg</td>
+                    <td>1.50 cm</td>
+                    <td>
+                        <a href="consultarhistorial/historial3.html">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>Consultar Historial
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>04</td>
+                    <td>Ana</td>
+                    <td>Rodríguez</td>
+                    <td>Gómez</td>
+                    <td>M</td>
+                    <td>55-8765-4321</td>
+                    <td>ana234@gmail.com</td>
+                    <td>10</td>
+                    <td>30 kg</td>
+                    <td>1.35 cm</td>
+                    <td>
+                        <a href="consultarhistorial/historial4.html">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>Consultar Historial
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>05</td>
+                    <td>Pedro</td>
+                    <td>Gómez</td>
+                    <td>Martínez</td>
+                    <td>H</td>
+                    <td>55-6789-2123</td>
+                    <td>pedro345@gmail.com</td>
+                    <td>29</td>
+                    <td>75 kg</td>
+                    <td>1.80 cm</td>
+                    <td>
+                        <a href="consultarhistorial/historial5.html">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>Consultar Historial
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>06</td>
+                    <td>Laura</td>
+                    <td>Sánchez</td>
+                    <td>Pérez</td>
+                    <td>M</td>
+                    <td>55-5432-1098</td>
+                    <td>laura456@gmail.com</td>
+                    <td>40</td>
+                    <td>56 kg</td>
+                    <td>1.62 cm</td>
+                    <td>
+                        <a href="consultarhistorial/historial6.html">
+                            <i class="fa-solid fa-magnifying-glass-plus"></i>Consultar Historial
+                        </a>
+                    </td>
+                </tr>
+        </table>
+    </div>
+</div>
+
+<!--Pie de pagina-->
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br>
+                <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+            </td>
+            <td>
+                &#169; TECH BLINDS <br>
+                <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                <i class="fa-brands fa-tiktok"></i> tech_blinds
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<script>
+    document.getElementById("buscar").addEventListener("input", function() {
+        var filtro = this.value.toLowerCase();
+        var filas = document.querySelectorAll("#tabla tbody tr");
+        filas.forEach(function(fila) {
+            var mostrar = false;
+            fila.querySelectorAll("td").forEach(function(celda) {
+                if (celda.textContent.toLowerCase().indexOf(filtro) > -1) {
+                    mostrar = true;
+                }
+            });
+            if (mostrar) {
+                fila.style.display = "";
+            } else {
+                fila.style.display = "none";
+            }
+        });
+    });
+</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERMEDCIAL</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="css/estilos_index.css">
+    <link rel="stylesheet" href="css/estilos_listaobjetos.css">
+    <link rel="stylesheet" href="css/estilos_formcolumnas.css">
+    <link rel="stylesheet" href="css/estilo_inventariomedi.css">
+    <script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+	<script src="js/script.js"></script>
+</head>
+<body>
+    <!--Encabezado-->
+    <header class="encabezado">
+        <img src="imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+        <h1>Consultorio Toñitos</h1>
+        <h2>Intermedical</h2>
+        <div class="clearfix"></div>
+        <nav>
+            <a href="lista_pacientes.html">
+                <i class="fa-solid fa-person"></i> Pacientes</a>
+            <a href="lista_servicios.html">
+                <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+            <a href="lista_medicos.html">
+                <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+            <a href="lista_medi.html">
+                <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+            <a href="agendar_citas.html">
+                <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+                <a href="historialmedico.html">
+                    <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+                <a href="perfil_usuario.html"> 
+                    <i class="fa-solid fa-tablets"></i>Inventario</a>
+            <a href="index.html">
+                <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+        </nav>
+    </header>
+    <!--Contenido Lista Medicamentos-->
+    <section class="caja">
+        <h1> Gestión de Medicamentos </h1>
+        <div class="tienda-caja">
+            <div class="lista-categoria">
+                <a href="#caja" class="categoria-item" category="todo"> Todo </a>
+                <a href="#caja" class="categoria-item" category="capsula"> Capsula </a>
+                <a href="#caja" class="categoria-item" category="inyectable"> Solución Inyectable </a>
+                <a href="#caja" class="categoria-item" category="tableta"> Tableta </a>
+                <a href="#caja" class="categoria-item" category="jarabe"> Jarabe </a>
+            </div>
+            <div class="lista-productos">
+                <div class="producto-item" category="capsula">
+                    <img src="imagenes/bioelectro.jpg" alt="" class="producto-imagen">
+                    <a href="catalogo_medi/medicamento1.html">Bioelectro</a>
+                </div>
+                <div class="producto-item" category="capsula">
+                    <img src="imagenes/agrifen.jpg" alt="" class="producto-imagen">
+                    <a href="catalogo_medi/medicamento2.html">Agrifen</a>
+                </div>
+                <div class="producto-item" category="capsula">
+                    <img src="imagenes/ketoprofeno.png" alt="" class="producto-imagen">
+                    <a href="catalogo_medi/medicamento3.html">Ketoprofeno</a>
+                </div>
+                <div class="producto-item" category="inyectable">
+                    <img src="imagenes/beyodecta.jpg" alt="" class="producto-imagen">
+                    <a href="catalogo_medi/medicamento4.html">Beyodecta</a>
+                </div>
+                <div class="producto-item" category="tableta">
+                    <img src="imagenes/paracetamol.jpg" alt="" class="producto-imagen">
+                    <a href="catalogo_medi/medicamento5.html">Paracetamol</a>
+                </div>
+                <div class="producto-item" category="jarabe">
+                    <img src="imagenes/bisolvon.jpg" alt="" class="producto-imagen">
+                    <a href="catalogo_medi/medicamento6.html">Bisolvona</a>
+                </div>
+            </div>
+        </div>
+    </section>
+ 
+<!--Pie de pagina-->
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br><!--Salto de linea-->
+                <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+            </td>
+            <td>
+                &#169; TECH BLINDS <br> <!--© simbolo de copyright-->
+                <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                <i class="fa-brands fa-tiktok"></i> tech_blinds
+            </td>
+        </tr>
+    </table>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+</footer>
+</body>
+</html> 
