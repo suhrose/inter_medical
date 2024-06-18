@@ -1,0 +1,168 @@
+/* Estilos CSS para la página Productos */
+
+
+.filtro
+{
+	background: #fff;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.caja
+{
+	max-width: 1100px;
+	width: 90%;
+	margin: auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.caja > h1
+{
+	color: black;
+	font-weight: 400px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	margin: 15px 0;
+}
+
+.caja > h1:after 
+{
+	content: '';
+	width: 100%;
+	height: 1px;
+	background: #C7C7C7;
+	margin: 20px 0;
+}
+
+.tienda-caja
+{
+	display: flex;
+}
+
+.lista-categoria
+{
+	display: flex;
+	flex-direction: column;
+	width: 20%;
+}
+
+.lista-categoria .categoria-item
+{
+	background-image: linear-gradient(to right,  #6ba1c5  51%, #28537e  100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+
+
+.lista-categoria .ct_item-active
+{
+	background: #28537e;
+}
+
+.categoria-item
+{
+	font-size: 20px;
+}
+
+.lista-productos
+{
+	width: 82%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.producto-imagen
+{
+	width: 330px;
+	height: 220px;
+}
+
+
+.lista-productos .producto-item
+{
+	width: 22%;
+	margin-left: 3%;
+	margin-bottom: 25px;
+	box-shadow: #28537e;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: flex-start;
+}
+
+.lista-productos .producto-item img 
+{
+	width: 100%;
+}
+
+.lista-productos .producto-item a
+{
+	display: block;
+	width: 100%;
+	padding: 8px 0;
+	background: #28537e;
+	color: #FFF;
+	text-align: center;
+	text-decoration: none;
+}
+
+/*Estilos css para las páginas de compra de productos */
+
+.comprar
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.comprar-imagen
+{
+	width: 100%;
+}
+
+.comprar-imagen img
+{
+	width: 100%;
+	height: 500px;
+}
+
+.formulario
+{
+	margin-left: 400px;
+}
+
+.compra
+{
+	display: inline-block;
+	margin-top: 20px;
+}
+
+.compra input[type="submit"]
+{
+	background-image: linear-gradient(to right, #fceabb 0%, #f8b500  51%, #fceabb  100%);
+	margin: 10px;
+	padding: 15px 45px;
+	text-align: center;
+	transition: 0.5s;
+	background-size: 200% auto;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	color: white;            
+	box-shadow: 0 0 20px #eee;
+	border-radius: 10px;
+	display: block;
+}
+
+
+.compra input[type="submit"]:hover
+{
+	background-position: right center; 
+	color: #fff;
+	text-decoration: none;         
+}

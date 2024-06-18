@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>INTERMEDICAL</title>
+<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> 
+<link rel="stylesheet" href="../css/estilos_listaobjetos.css">
+<link rel="stylesheet" href="../css/estilos_index.css">
+<link rel="stylesheet" href="../css/estilos_formcolumnas.css">
+<script src="https://kit.fontawesome.com/8d1f4097ba.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!--Encabezado-->
+<header class="encabezado">
+    <img src="../imagenes/INTERMEDICALLOGO.png" alt="logo INTERmedical">
+    <h1>Consultorio Toñitos</h1>
+    <h2>Intermedical</h2>
+    <div class="clearfix"></div>
+    <nav>
+        <a href="../perfil_usuario.html">
+            <i class="fa-solid fa-person"></i> Pacientes</a>
+        <a href="../lista_servicios.html">
+            <i class="fa-solid fa-stethoscope"></i> Servicios M</a>
+        <a href="../lista_medicos.html">
+            <i class="fa-solid fa-user-doctor"></i> Doctor</a>
+        <a href="../lista_medi.html">
+            <i class="fa-solid fa-prescription-bottle-medical"></i> Medicamentos</a>
+        <a href="../agendar_citas.html">
+            <i class="fa-regular fa-calendar-days"></i>Citas Médicas</a>
+            <a href="../historialmedico.html">
+                <i class="fa-solid fa-file-medical"></i>Historial Médico</a>
+            <a href="../inventariomedi.html"> 
+                <i class="fa-solid fa-tablets"></i>Inventario</a>
+        <a href="index.html">
+            <i class="fa-solid fa-circle-user"></i> Cerrar Sesión</a>
+    </nav>
+</header>
+
+<!-- Contenido Lista Historial -->
+<div>
+    <div class="listobj">
+        <h3>Paciente</h3>
+        <table id="tabla">
+                <tr>
+                    <th>ID_Paciente
+                        <td>Enfermedad</td>
+                        <td>Alergia</td>
+                        <td>Apellido M</td>
+                        <td>Género</td>
+                        <td>Telefono</td>
+                        <td>Correo electrónico</td>
+                        <td>Edad</td>
+                        <td>Peso</td>
+                        <td>Estatura</td>
+                    </th>
+                </tr>
+                <tr>
+                    <td>01</td>
+                    <td>Cristiano</td>
+                    <td>Dominguez</td>
+                    <td>Perez</td>
+                    <td>H</td>
+                    <td>55-3668-5095</td>
+                    <td>bestiaparda77@gmail.com</td>
+                    <td>18</td>
+                    <td>72 kg</td>
+                    <td>1.65 cm</td>
+                </tr>
+        </table>
+    </div>
+</div>
+<!--DIAGNOSTICO-->
+<div>
+    <div class="listobj">
+        <h3>Diagnóstico</h3>
+        <table id="tabla">
+                <tr>
+                        <td>Lesiones</td>
+                        <td>Cirugías</td>
+                        <td>Enfermedades</td>
+                        <td>Alergias</td>
+                        <td>Antecedentes Familiares</td>
+                        <td>Medicamentos</td>
+                        <td>Vacunación</td>
+                </tr>
+                <tr>
+                    <td contenteditable="true">Ninguna hasta ahora</td>
+                    <td contenteditable="true">Ninguna hasta ahora</td>
+                    <td contenteditable="true">Tos</td>
+                    <td contenteditable="true">Nuez, Cesped</td>
+                    <td contenteditable="true">Diabetes</td>
+                    <td contenteditable="true">Paracetamol</td>
+                    <td contenteditable="true">Todas las vacunas</td>
+                </tr>
+        </table>
+    </div>
+</div>
+<!--RECETA MEDICA-->
+<div class="receta-container">
+    <h1 class="receta-title">Receta Médica</h1>
+    <div class="receta-section">
+        <h2 class="receta-section-title">Datos del Paciente</h2>
+        <p class="receta-text" contenteditable="true"><strong>Nombre:</strong> Cristiano Dominguez Perez</p>
+        <p class="receta-text" contenteditable="true"><strong>Edad:</strong> 18 años</p>
+        <p class="receta-text" contenteditable="true"><strong>Género:</strong> Masculino</p>
+        <p class="receta-text" contenteditable="true"><strong>Fecha:</strong> 7 de abril de 2024</p>
+    </div>
+    <div class="receta-section">
+        <h2 class="receta-section-title">Diagnóstico</h2>
+        <p class="receta-text" contenteditable="true">El paciente presenta síntomas de tos y gripe común.</p>
+    </div>
+    <div class="receta-section">
+        <h2 class="receta-section-title">Tratamiento Recomendado</h2>
+        <ul class="medicines-list" contenteditable="true">
+            <li class="medicine-item"><strong>Paracetamol</strong> - Tomar 1 comprimido cada 6 horas.</li>
+            <li class="medicine-item"><strong>Ibuprofeno</strong> - Tomar 1 comprimido cada 8 horas después de comer.</li>
+            <li class="medicine-item"><strong>Jarabe para la tos</strong> - Tomar 10 ml cada 8 horas.</li>
+        </ul>
+    </div>
+    <div class="receta-section">
+        <h2 class="receta-section-title">Indicaciones Adicionales</h2>
+        <p class="receta-text" contenteditable="true">Descansar adecuadamente y mantenerse hidratado. En caso de empeoramiento de los síntomas, acudir nuevamente al médico.</p>
+    </div>
+    <div class="receta-section">
+        <h2 class="receta-section-title">Firma del Médico</h2>
+        <p class="receta-text" contenteditable="true">Dr. José Antonio Cruz Suares</p>
+        <p class="receta-text" contenteditable="true">Médico General, cirujano y homeopata</p>
+    </div>
+</div>
+
+<div class="botones-container">
+    <!-- Botones -->
+    <input type="submit" name="guardar" value="Guardar" onclick="mostrarAlerta()">
+    <input type="button" name="cancelar" value="Cancelar" onclick="cancelar()">
+</div>
+<script>
+    // Función para mostrar la alerta y redireccionar
+    function mostrarAlerta() {
+        alert("¡Se ha generado la receta con éxito!");
+        window.location.href = "file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/historialmedico.html";
+    }
+    // Función para el botón "Cancelar"
+    function cancelar() {
+        alert("Operación cancelada");
+        window.location.href = "file:///C:/Users/aeliz/OneDrive/Desktop/INTERMEDICAL/vista/historialmedico.html";
+    }
+</script>
+<!--Pie de pagina-->
+<footer class="footer">
+    <table>
+        <tr>
+            <td>
+                <i class="fa-solid fa-house-chimney-medical"></i> Consultorio Toñitos <br>
+                <i class="fa-solid fa-location-dot"></i> Calle 22, Colonia El sol<br>
+                <i class="fa-solid fa-phone"></i> 55 3668 5095 <br>
+            </td>
+            <td>
+                &#169; TECH BLINDS <br>
+                <i class="fa-brands fa-facebook"></i> TECH BLINDS <br>
+                <i class="fa-brands fa-instagram"></i> tech_blinds <br>
+                <i class="fa-brands fa-tiktok"></i> tech_blinds
+            </td>
+        </tr>
+    </table>
+</footer>
+
+<script>
+    document.getElementById("buscar").addEventListener("input", function() {
+        var filtro = this.value.toLowerCase();
+        var filas = document.querySelectorAll("#tabla tbody tr");
+        filas.forEach(function(fila) {
+            var mostrar = false;
+            fila.querySelectorAll("td").forEach(function(celda) {
+                if (celda.textContent.toLowerCase().indexOf(filtro) > -1) {
+                    mostrar = true;
+                }
+            });
+            if (mostrar) {
+                fila.style.display = "";
+            } else {
+                fila.style.display = "none";
+            }
+        });
+    });
+</script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
